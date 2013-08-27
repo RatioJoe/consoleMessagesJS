@@ -4,11 +4,13 @@ function Messages() {
     self.includeTimestamp = true;
     self.messagePrefix = "";
     /* - Another way to organize supported console elements
+       - Example: use self.supported.info instead of self.hasConsoleInfoSupport
     self.supported = {
         "console": hasConsoleSupport(),
         "log": hasConsoleLogSupport(),
         "warn": hasConsoleWarnSupport(),
-        "error": hasConsoleErrorSupport()
+        "error": hasConsoleErrorSupport(),
+        "info": hasConsoleInfoSupport()
     };
     */
     self.hasConsoleSupport = hasConsoleSupport();
